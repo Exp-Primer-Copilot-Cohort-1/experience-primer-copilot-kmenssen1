@@ -1,12 +1,11 @@
-function skillMember() {
-    
-    var member = {
-        name: "John",
-        age: 25,
-        skills: ["HTML", "CSS", "JS"],
-        details: function() {
-            return this.name + " is " + this.age + " years old and has skills in " + this.skills.join(", ");
-        }
-    };
-    return member.details(); 
+function skillsMember() {
+  return {
+    name: 'skillsMember',
+    template: `
+      <div>
+        <h1>Skills</h1>
+        <p>Skills for members</p>
+      </div>
+    `
+  }
 }
